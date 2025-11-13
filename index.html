@@ -546,6 +546,37 @@
             }
         }
 
+.info-textopu {
+    position: relative;
+    top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12.5px;        /* ← 少し小さめに */
+    color: #000000;
+    line-height: 1.3;         /* ← 行間を詰める */
+    text-align: center;
+    word-wrap: break-word;
+    background-color: #f3f3f3;
+
+    display: block;
+    width: 100%;
+    padding: 3px 0;           /* ← 縦の余白を小さく（前は8px） */
+
+    border-radius: 0 0 4px 4px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .info-textopu {
+        font-size: 12px;
+        top: -10px;
+        line-height: 1.4;
+        padding: 2px 0;       /* モバイルはさらに薄く */
+    }
+}
+
         .symptoms,
         .options {
             display: block;
@@ -691,7 +722,7 @@
             /* ここで枠線を指定 */
             outline-offset: 2px;
                 /* 外側に色を追加 */
-    box-shadow: 0 0 0 3px #7e6c86
+    box-shadow: 0 0 0 3px rgb(255, 36, 36)
         }
 
         /* 必須マークのスタイル */
@@ -1034,10 +1065,15 @@
             </div>
             <div class="irradiations" id="opusyon">
                 <button type="button" id="firstirradiations" onclick="selectirradiations(this)" data-price="0">フェムケア矯正45分</button>
+                <div class="info-textopu">料金：4,500円</div>
                 <button type="button" id="repeatirradiations" onclick="selectirradiations(this)" data-price="0">フェイシャル30分</button>
+                <div class="info-textopu">料金：3,700円</div>
                 <button type="button" id="sanirradiations" onclick="selectirradiations(this)" data-price="0">フェイシャル60分</button>
+                <div class="info-textopu">料金：6,100円</div>
                 <button type="button" id="yontirradiations" onclick="selectirradiations(this)" data-price="0">ドライヘッドスパ50分</button>
+                <div class="info-textopu">料金：6,600円</div>
                 <button type="button" id="goirradiations" onclick="selectirradiations(this)" data-price="0">頭皮ケア・発毛促進50分</button>
+                <div class="info-textopu">料金：10,000円</div>
             </div>
         </div>
 
@@ -1054,12 +1090,19 @@
             </div>
             <div class="irradiations" id="opusyon">
                 <button type="button" id="firstirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア30分</button>
+                <div class="info-textopu">料金：4,000円</div>
                 <button type="button" id="repeatirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア60分</button>
+                <div class="info-textopu">料金：8,100円</div>
                 <button type="button" id="sanirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア90分</button>
+                <div class="info-textopu">料金：11,000円</div>
                 <button type="button" id="yonirradiations" onclick="selectirradiations(this)" data-price="0">フェイシャル30分</button>
+                <div class="info-textopu">料金：3,700円</div>
                 <button type="button" id="goirradiations" onclick="selectirradiations(this)" data-price="0">フェイシャル60分</button>
+                <div class="info-textopu">料金：6,100円</div>
                 <button type="button" id="rokuirradiations" onclick="selectirradiations(this)" data-price="0">ドライヘッドスパ50分</button>
+                <div class="info-textopu">料金：6,600円</div>
                 <button type="button" id="sitiirradiations" onclick="selectirradiations(this)" data-price="0">頭皮ケア・発毛促進50分</button>
+                <div class="info-textopu">料金：10,000円</div>
             </div>
         </div>
 
@@ -1077,11 +1120,17 @@
             </div>
             <div class="irradiations" id="opusyon">
                 <button type="button" id="firstirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア30分</button>
+                <div class="info-textopu">料金：4,000円</div>
                 <button type="button" id="repeatirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア60分</button>
+                <div class="info-textopu">料金：8,100円</div>
                 <button type="button" id="sanirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア90分</button>
+                <div class="info-textopu">料金：11,000円</div>
                 <button type="button" id="yonirradiations" onclick="selectirradiations(this)" data-price="0">フェムケア矯正45分</button>
+                <div class="info-textopu">料金：4,500円</div>
                 <button type="button" id="goirradiations" onclick="selectirradiations(this)" data-price="0">ドライヘッドスパ50分</button>
+                <div class="info-textopu">料金：6,600円</div>
                 <button type="button" id="rokuirradiations" onclick="selectirradiations(this)" data-price="0">頭皮ケア・発毛促進50分</button>
+                <div class="info-textopu">料金：10,000円</div>
             </div>
         </div>
 
@@ -1098,12 +1147,19 @@
             </div>
             <div class="irradiations" id="opusyon">
                 <button type="button" id="firstirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア30分</button>
+                <div class="info-textopu">料金：4,000円</div>
                 <button type="button" id="repeatirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア60分</button>
+                <div class="info-textopu">料金：8,100円</div>
                 <button type="button" id="sanirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア90分</button>
+                <div class="info-textopu">料金：11,000円</div>
                 <button type="button" id="yonirradiations" onclick="selectirradiations(this)" data-price="0">フェムケア矯正45分</button>
+                <div class="info-textopu">料金：4,500円</div>
                 <button type="button" id="goirradiations" onclick="selectirradiations(this)" data-price="0">フェイシャル30分</button>
+                <div class="info-textopu">料金：3,700円</div>
                 <button type="button" id="rokuirradiations" onclick="selectirradiations(this)" data-price="0">フェイシャル60分</button>
+                <div class="info-textopu">料金：6,100円</div>
                 <button type="button" id="sitiirradiations" onclick="selectirradiations(this)" data-price="0">頭皮ケア・発毛促進50分</button>
+                <div class="info-textopu">料金：10,000円</div>
             </div>
         </div>
 
@@ -1120,12 +1176,19 @@
             </div>
             <div class="irradiations" id="opusyon">
                 <button type="button" id="firstirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア30分</button>
+                <div class="info-textopu">料金：4,000円</div>
                 <button type="button" id="repeatirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア60分</button>
+                <div class="info-textopu">料金：8,100円</div>
                 <button type="button" id="sanirradiations" onclick="selectirradiations(this)" data-price="0">リンパケア90分</button>
+                <div class="info-textopu">料金：11,000円</div>
                 <button type="button" id="yonirradiations" onclick="selectirradiations(this)" data-price="0">フェムケア矯正45分</button>
+                <div class="info-textopu">料金：4,500円</div>
                 <button type="button" id="goirradiations" onclick="selectirradiations(this)" data-price="0">フェイシャル30分</button>
+                <div class="info-textopu">料金：3,700円</div>
                 <button type="button" id="rokuirradiations" onclick="selectirradiations(this)" data-price="0">フェイシャル60分</button>
+                <div class="info-textopu">料金：6,100円</div>
                 <button type="button" id="sitiirradiations" onclick="selectirradiations(this)" data-price="0">ドライヘッドスパ50分</button>
+                <div class="info-textopu">料金：6,600円</div>
             </div>
         </div>
 
@@ -1239,7 +1302,6 @@
             'ドライヘッドスパ': 110,
             '頭皮ケア・発毛促進': 110
         };
-
 
         let selectedMenuTime = 0;
 
@@ -1427,33 +1489,70 @@
                 fetchAvailability(currentDate);
             }
 
-            // --- ここがポイント ---
-            // 解除クリックの場合（このボタンが非activeになった後）は詳細を表示しない
-            if (!button.classList.contains('active')) {
-                if (treatmentText) {
-                    treatmentText.style.display = 'none';
-                    treatmentText.innerHTML = '';
-                }
-            } else {
-                // 表示内容を treatmentId で分岐（未指定/不一致なら表示しない）
-                let html = '';
-                if (treatmentId === 'treatment1') {
-                    html = `<div style="text-align: left;"><strong>施術60分+カウンセリング等40分</strong><br>※症状によりお時間が前後する場合がございます</div><div style="text-align: right;"></div>`;
-                } else if (treatmentId === 'treatment2') {
-                    html = `<div style="text-align: left;"><strong>施術90分+カウンセリング等40分</strong><br>※症状によりお時間が前後する場合がございます</div><div style="text-align: right;"></div>`;
-                } else if (treatmentId === 'treatment3') {
-                    html = `<div style="text-align: left;"><strong>施術120分+カウンセリング等40分</strong><br>※症状によりお時間が前後する場合がございます</div><div style="text-align: right;"></div>`;
-                } else if (treatmentId === 'treatment4') {
-                    html = ``;
-                } else if (treatmentId === 'treatment5') {
-                    html = `<div style="text-align: left;"><strong>施術30分+カウンセリング等30分</strong><br>※症状によりお時間が前後する場合がございます</div><div style="text-align: right;"></div>`;
-                } else if (treatmentId === 'treatment6') {
-                    html = `<div style="text-align: left;"><strong>施術60分+カウンセリング等30分</strong><br>※症状によりお時間が前後する場合がございます</div><div style="text-align: right;"></div>`;
-                } else if (treatmentId === 'treatment7') {
-                    html = `<div style="text-align: left;"><strong>施術50分+カウンセリング等30分</strong><br>※症状によりお時間が前後する場合がございます</div><div style="text-align: right;"></div>`;
-                } else if (treatmentId === 'treatment8') {
-                    html = `<div style="text-align: left;"><strong>施術50分+カウンセリング等30分</strong><br>※症状によりお時間が前後する場合がございます</div><div style="text-align: right;"></div>`;
-                }
+    // --- ここから表示処理 ---
+    if (!button.classList.contains('active')) {
+        if (treatmentText) {
+            treatmentText.style.display = 'none';
+            treatmentText.innerHTML = '';
+        }
+    } else {
+        let html = '';
+        if (treatmentId === 'treatment1') {
+            html = `<div style="text-align: left;">
+                <strong>施術60分+カウンセリング等40分</strong><br>
+                通常料金：9,600円 / 
+                <span style="color: #e60000; font-weight: bold;">初回体験料金：7,600円</span><br>
+                ※症状によりお時間が前後する場合がございます
+            </div>`;
+        } else if (treatmentId === 'treatment2') {
+            html = `<div style="text-align: left;">
+                <strong>施術90分+カウンセリング等40分</strong><br>
+                通常料金：13,500円 / 
+                <span style="color: #e60000; font-weight: bold;">初回体験料金：10,800円</span><br>
+                ※症状によりお時間が前後する場合がございます
+            </div>`;
+        } else if (treatmentId === 'treatment3') {
+            html = `<div style="text-align: left;">
+                <strong>施術120分+カウンセリング等40分</strong><br>
+                通常料金：16,800円 / 
+                <span style="color: #e60000; font-weight: bold;">初回体験料金：13,400円</span><br>
+                ※症状によりお時間が前後する場合がございます
+            </div>`;
+        } else if (treatmentId === 'treatment4') {
+            html = `<div style="text-align: left;">
+                通常料金：6,500円 / 
+                <span style="color: #e60000; font-weight: bold;">初回体験料金：4,500円</span><br>
+                ※症状によりお時間が前後する場合がございます
+            </div>`;
+        } else if (treatmentId === 'treatment5') {
+            html = `<div style="text-align: left;">
+                <strong>施術30分+カウンセリング等30分</strong><br>
+                通常料金：4,400円 / 
+                <span style="color: #e60000; font-weight: bold;">初回体験料金：3,000円</span><br>
+                ※症状によりお時間が前後する場合がございます
+            </div>`;
+        } else if (treatmentId === 'treatment6') {
+            html = `<div style="text-align: left;">
+                <strong>施術60分+カウンセリング等30分</strong><br>
+                通常料金：7,150円 / 
+                <span style="color: #e60000; font-weight: bold;">初回体験料金：5,500円</span><br>
+                ※症状によりお時間が前後する場合がございます
+            </div>`;
+        } else if (treatmentId === 'treatment7') {
+            html = `<div style="text-align: left;">
+                <strong>施術50分+カウンセリング等30分</strong><br>
+                通常料金：7,700円 / 
+                <span style="color: #e60000; font-weight: bold;">初回体験料金：5,300円</span><br>
+                ※症状によりお時間が前後する場合がございます
+            </div>`;
+        } else if (treatmentId === 'treatment8') {
+            html = `<div style="text-align: left;">
+                <strong>施術50分+カウンセリング等30分</strong><br>
+                通常料金：11,000円 / 
+                <span style="color: #e60000; font-weight: bold;">初回体験料金：4,980円</span><br>
+                ※症状によりお時間が前後する場合がございます
+            </div>`;
+        }
 
                 // 内容が用意できた時だけ移動＆表示
                 if (html) {
